@@ -1,3 +1,4 @@
+import PriceOption from "../PriceOption/PriceOption";
 
 const PriceOptions = () => {
 
@@ -63,9 +64,16 @@ const PriceOptions = () => {
   return (
     <div>
 
+      <h1>This the best deals of the town</h1>
+        {
+            gymPackages.map(option => <PriceOption 
+            key={option.id}
+            option={option}
+            ></PriceOption>)
+        }
 
     </div>
-  )
+  ) 
 }
 
 export default PriceOptions

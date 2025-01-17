@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
 
-const PriceOption = ({package}) => {
+const PriceOption = ({option}) => {
+  console.log(option)
+    
   return (
     <div>PriceOption</div>
   )
 }
 
 PriceOption.propTypes = {
-    package: PropTypes.object
+    option: PropTypes.object
 }
 
 export default PriceOption
